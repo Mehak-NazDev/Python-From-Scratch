@@ -16,3 +16,11 @@
 
 * **Git Commitment:** A "commit" is just a save-point for your project. A good commit message describes exactly what you did so you don't have to guess later
 ---
+
+## Day 2 
+
+* **The Scope Isolation Rule:** Variables created inside a function are "trapped" in that function (local); they cannot change or overwrite the original variables outside (global) unless you explicitly use the `global` keyword.
+  
+* **Definition vs. Execution:** Defining a function (`def my_func():`) only prepares the instruction set in memory; you must "call" the function (`my_func()`) to actually execute the code.
+  
+* **The Print Dependency:** A function does not automatically display its results; if there is no `print()` statement *inside* the function, you must capture or print the function's outcome *after* it has been called to see any output.
