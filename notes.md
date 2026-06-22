@@ -24,3 +24,12 @@
 * **Definition vs. Execution:** Defining a function (`def my_func():`) only prepares the instruction set in memory; you must "call" the function (`my_func()`) to actually execute the code.
   
 * **The Print Dependency:** A function does not automatically display its results; if there is no `print()` statement *inside* the function, you must capture or print the function's outcome *after* it has been called to see any output.
+---
+
+## Day 3
+
+Atomic vs. Container Types: Distinguish between Atomic Data Types (int, float, str, bool, None) which represent a single value, and Data Structures (list, tuple, dict, set) which are containers designed to organize multiple atoms.
+
+The Power of Methods: Python objects have built-in "superpowers." Instead of doing everything manually (like hand-counting string indices), use built-in methods like .split(), .append(), or .add() to perform complex tasks cleanly.
+
+The "Everything is an Object" Secret: Every data type in Python is an object. Using dir() reveals that even simple numbers have hidden methods (like __add__), confirming that math in Python is actually the execution of object-based commands. 
