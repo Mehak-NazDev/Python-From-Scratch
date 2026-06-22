@@ -28,8 +28,8 @@
 
 ## Day 3
 
-Atomic vs. Container Types: Distinguish between Atomic Data Types (int, float, str, bool, None) which represent a single value, and Data Structures (list, tuple, dict, set) which are containers designed to organize multiple atoms.
+* **Atomic vs. Container Types:** Distinguish between Atomic Data Types (int, float, str, bool, None) which represent a single value, and Data Structures (list, tuple, dict, set) which are containers designed to organize multiple atoms.
 
-The Power of Methods: Python objects have built-in "superpowers." Instead of doing everything manually (like hand-counting string indices), use built-in methods like .split(), .append(), or .add() to perform complex tasks cleanly.
+* **The Power of Methods:** Python objects have built-in "superpowers." Instead of doing everything manually (like hand-counting string indices), use built-in methods like `.split(), .append(), or .add()` to perform complex tasks cleanly.
 
-The "Everything is an Object" Secret: Every data type in Python is an object. Using dir() reveals that even simple numbers have hidden methods (like __add__), confirming that math in Python is actually the execution of object-based commands. 
+* **The "Everything is an Object" Secret:** Every data type in Python is an object. Using dir() reveals that even simple numbers have hidden methods `(like __add__)`, confirming that math in Python is actually the execution of object-based commands. 
