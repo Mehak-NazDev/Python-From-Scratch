@@ -32,4 +32,40 @@
 
 * **The Power of Methods:** Python objects have built-in "superpowers." Instead of doing everything manually (like hand-counting string indices), use built-in methods like `.split(), .append(), or .add()` to perform complex tasks cleanly.
 
-* **The "Everything is an Object" Secret:** Every data type in Python is an object. Using dir() reveals that even simple numbers have hidden methods `(like __add__)`, confirming that math in Python is actually the execution of object-based commands. 
+* **The "Everything is an Object" Secret:** Every data type in Python is an object. Using dir() reveals that even simple numbers have hidden methods `(like __add__)`, confirming that math in Python is actually the execution of object-based commands.
+---
+
+## Day 3: Summary of Core Learning by making a simple library...
+
+* **The "Gatekeeper" Pattern:**
+
+ Never trust raw input. Use functions with if conditions to validate, clean, and sanitize data `(using .strip() and .title())` before it enters your database. This prevents "dirty" data from breaking your logic later.
+
+* **Dictionary Architecture:**
+
+Moving from flat lists to Nested Dictionaries allows for complex data modeling (Title -> {Author, Status, Year}). This structure is the foundation of how most modern applications handle and store objects.
+
+* **The QA Mindset (Edge Case Discovery):**
+
+Programming is 50% writing code and 50% anticipating how it will fail. Identifying potential bugs (like duplicates, invalid years, or case-mismatched titles) is not "overthinking" rather it is requirement gathering. So, Always document these edge cases in a "TODO" list to keep the project manageable.
+
+**Casting as a Safety Valve:** 
+
+Use explicit casting (like int(year)) to force data into the correct format. If the conversion fails, the program should "fail gracefully" (using return or future error handling) rather than crashing the system.
+
+---
+## Key observation
+I coded three edge cases now todo edge cases that I noticed was these: 
+
+**Edge Case Detection:** 
+three critical business rules (Same author, multiple books; Same title, different authors; Numerical noise in titles).
+
+---
+
+## TODO (Future Improvements):
+
+Handle "Same Author, Multiple Books."
+
+Handle "Same Title, Different Authors."
+
+Implement regex or cleaning logic for "Numerical noise" in book titles.
